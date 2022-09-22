@@ -1,7 +1,5 @@
 <template>
-  <nav
-    class="p-10 font-raleway border border-r border-gray-200 w-1/5 h-screen relative"
-  >
+  <nav class="p-10 font-raleway border-r border-gray-200 h-screen relative">
     <section class="flex mt-4">
       <svg
         version="1.1"
@@ -76,15 +74,19 @@
         <g></g>
       </svg>
 
-      <h2 class="font-bold text-2xl">Gogana</h2>
+      <h2 class="font-bold text-xl">Gogana</h2>
     </section>
     <!-- Header End -->
-    <section class="mt-20">
+
+    <!-- Nav Item Start -->
+    <section class="mt-20 text-gray-500">
       <!-- Home Nav-Item -->
       <div class="flex my-8 text-sm cursor-pointer">
         <svg
           class="w-5 mr-5"
           viewBox="0 0 24 24"
+          fill="#9e9e9e"
+          stroke="#9e9e9e"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -122,6 +124,8 @@
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="#9e9e9e"
+          stroke="#9e9e9e"
           x="0px"
           y="0px"
           viewBox="0 0 329.991 329.991"
@@ -165,6 +169,8 @@
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="#9e9e9e"
+          stroke="#9e9e9e"
           x="0px"
           y="0px"
           viewBox="0 0 490.288 490.288"
@@ -273,7 +279,7 @@
       <!-- Messages Nav Item End -->
     </section>
     <!-- Bottom Section -->
-    <section class="absolute bottom-0">
+    <section class="absolute bottom-0 text-gray-500">
       <div class="flex my-8 text-sm cursor-pointer">
         <svg
           class="w-5 mr-5"
