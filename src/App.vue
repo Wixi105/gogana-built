@@ -84,6 +84,27 @@
         </div>
         <!-- Header End -->
       </div>
+      <!-- Chart Item Start -->
+      <div class="flex justify-around mt-16">
+        <ChartItem
+          label="Today's Sales"
+          price="$20.4K"
+          desc="We have sold 123 items"
+        />
+        <ChartItem
+        class="ml-5"
+          label="Today's Revenue"
+          price="$8.2K"
+          desc="Available to Payout"
+        />
+        <ChartItem
+        class="ml-5"
+          label="In Escrow"
+          price="$18.2K"
+          desc="Available to payout"
+        />
+      </div>
+      <!-- Chart Item End -->
     </div>
     <!-- Right Side End -->
   </div>
@@ -91,4 +112,5 @@
 
 <script setup>
 import SideBar from "./views/SideBar.vue";
+import ChartItem from "./components/ChartItem.vue";
 </script>
