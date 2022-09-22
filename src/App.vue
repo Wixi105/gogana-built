@@ -30,7 +30,9 @@
           </svg>
         </section>
         <!-- Bell Start -->
-        <section class="border border-gray-300 p-2 rounded-full h-fit ml-10">
+        <section
+          class="border border-gray-300 p-2 rounded-full h-fit ml-10 relative cursor-pointer"
+        >
           <svg
             class="w-5"
             fill="none"
@@ -45,6 +47,17 @@
               d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
             ></path>
           </svg>
+          <!-- Bell Dot Icon SVG -->
+          <svg
+            class="absolute top-1 left-3"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="4" fill="#FF7F50" fill-rule="evenodd" />
+          </svg>
+          <!-- Bell Dot Icon SVG End -->
         </section>
         <!-- Bell End -->
         <!-- Profile Start -->
@@ -54,7 +67,7 @@
             <p class="text-xs font-regular">Super Admin</p>
           </div>
           <img
-          class="w-12 h-12 rounded-full object-cover ml-3"
+            class="w-12 h-12 rounded-full object-cover ml-3"
             src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1200"
             alt=""
           />
