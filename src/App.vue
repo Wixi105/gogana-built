@@ -92,19 +92,30 @@
           desc="We have sold 123 items"
         />
         <ChartItem
-        class="ml-5"
+          class="ml-5"
           label="Today's Revenue"
           price="$8.2K"
           desc="Available to Payout"
         />
         <ChartItem
-        class="ml-5"
+          class="ml-5"
           label="In Escrow"
           price="$18.2K"
           desc="Available to payout"
         />
       </div>
       <!-- Chart Item End -->
+      <!-- Bar Item Start -->
+      <div class="mt-8 flex">
+        <BarChartItem class="w-2/3" />
+        <DoughnutChartItem class="w-1/3" />
+      </div>
+      <!-- Bar Item End -->
+      <!-- Table Start -->
+      <div class="mt-8">
+        <TableItem />
+      </div>
+      <!-- Table End -->
     </div>
     <!-- Right Side End -->
   </div>
@@ -113,4 +124,7 @@
 <script setup>
 import SideBar from "./views/SideBar.vue";
 import ChartItem from "./components/ChartItem.vue";
+import BarChartItem from "./components/BarChartItem.vue";
+import DoughnutChartItem from "./components/DoughnutChartItem.vue";
+import TableItem from "./components/TableItem.vue";
 </script>

@@ -7,6 +7,9 @@
       <p class="text-2xl font-bold">{{ price }}</p>
       <p class="text-xs text-gray-500 pt-1">{{ desc }}</p>
     </section>
+    <section>
+      <div class="border-2 rounded-full"></div>
+    </section>
   </div>
 </template>
 
