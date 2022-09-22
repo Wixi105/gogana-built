@@ -12,12 +12,12 @@
           <input
             type="text"
             placeholder="Search Here..."
-            class="bg-gray-100 placeholder:font-light placeholder:text-start pl-10 text-sm border-none rounded-full w-[400px] py-3 px-2 focus:border-n-secondary-20 focus:outline focus:outline-1 focus:outline-n-secondary-20"
+            class="bg-gray-100 placeholder:font-light placeholder:text-start pl-10 text-sm border-none rounded-full w-[400px] py-3 px-2 focus:border-n-secondary-20 focus:outline focus:outline-1 focus:outline-gray-300"
           />
           <svg
             class="absolute top-[13px] left-4 h-5 pointer-events-none"
             fill="none"
-            stroke="currentColor"
+            stroke="#9e9e9e"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -30,7 +30,7 @@
           </svg>
         </section>
         <!-- Bell Start -->
-        <section class="border border-gray-300 p-2 rounded-full h-fit ml-8">
+        <section class="border border-gray-300 p-2 rounded-full h-fit ml-10">
           <svg
             class="w-5"
             fill="none"
@@ -47,12 +47,19 @@
           </svg>
         </section>
         <!-- Bell End -->
-        <section class="ml-8">
+        <!-- Profile Start -->
+        <section class="ml-10 flex items-center">
           <div>
             <p class="text-sm font-semibold">Alex Mora</p>
             <p class="text-xs font-regular">Super Admin</p>
           </div>
+          <img
+          class="w-12 h-12 rounded-full object-cover ml-3"
+            src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt=""
+          />
         </section>
+        <!-- Profile End -->
       </div>
     </div>
     <!-- Header End -->
