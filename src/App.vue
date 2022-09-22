@@ -4,7 +4,7 @@
       <SideBar />
     </div>
     <!-- Right Side -->
-    <div class="w-4/5 p-10 mt-4 h-fit">
+    <div class="w-4/5 p-10 mt-2 h-fit">
       <div class="flex justify-between items-center">
         <!-- Header Start -->
         <p class="text-xl font-medium">Dashboard</p>
