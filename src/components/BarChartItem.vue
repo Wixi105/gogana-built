@@ -6,7 +6,24 @@
       <p class="font-medium mb-3">Total Revenue</p>
       <section class="flex items-center text-xs">
         <p class="text-2xl font-semibold">$50.4K</p>
-        <p class="text-green-600 ml-3">8% than last month</p>
+        <p class="text-green-600 ml-3 flex items-center">
+          8% than last month
+          <span
+            ><svg
+              class="w-3 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+              ></path></svg
+          ></span>
+        </p>
       </section>
     </div>
     <div class="flex items-center">
