@@ -81,12 +81,14 @@
     <!-- Nav Item Start -->
     <section class="mt-20 text-gray-500">
       <!-- Home Nav-Item -->
-      <div class="flex my-8 text-sm cursor-pointer">
+      <div
+        class="flex my-8 text-sm cursor-pointer bg-blue-600 p-3 rounded-md text-white"
+      >
         <svg
           class="w-5 mr-5"
           viewBox="0 0 24 24"
-          fill="#9e9e9e"
-          stroke="#9e9e9e"
+          fill="#fff"
+          stroke="#fff"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

@@ -38,21 +38,25 @@
           </div>
           <p class="ml-4 self-center">{{ datum.product_name }}</p>
         </li>
-        <li class="justify-self-center">{{ datum.order_id }}</li>
-        <li class="justify-self-center">{{ datum.date }}</li>
-        <li class="justify-self-center col-span-2">{{ datum.name }}</li>
+        <li class="justify-self-center self-center">{{ datum.order_id }}</li>
+        <li class="justify-self-center self-center">{{ datum.date }}</li>
+        <li class="justify-self-center col-span-2 self-center">
+          {{ datum.name }}
+        </li>
         <li
-          class="justify-self-center text-sm"
+          class="justify-self-center text-sm self-center px-4 py-1 rounded-md"
           :class="
-            datum.status === 'Pending' ? 'text-yellow-600' : 'text-green-600'
+            datum.status === 'Pending'
+              ? 'text-yellow-700 bg-yellow-100 border border-yellow-300'
+              : 'text-green-700 bg-green-100 border border-green-300'
           "
         >
           {{ datum.status }}
         </li>
-        <li class="justify-self-center">{{ datum.amount }}</li>
+        <li class="justify-self-center self-center">{{ datum.amount }}</li>
         <li class="justify-self-end">
           <svg
-            class="w-6 h-6"
+            class="w-6 h-6 self-center"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
