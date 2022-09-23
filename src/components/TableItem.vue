@@ -12,25 +12,60 @@
       </div>
     </section>
     <section class="bg-gray-100">
-      <ul class="flex justify-between mt-2 px-5 py-2 text-sm">
-        <li>Products</li>
-        <li>Order ID</li>
-        <li>Date</li>
-        <li>Customer name</li>
-        <li>Status</li>
-        <li>Amount</li>
-        <li>Action</li>
+      <ul class="grid grid-cols-9 gap-6 mt-2 px-5 py-2 text-sm">
+        <li class="col-span-2">Products</li>
+        <li class="place-self-center">Order ID</li>
+        <li class="place-self-center">Date</li>
+        <li class="place-self-center col-span-2">Customer name</li>
+        <li class="place-self-center">Status</li>
+        <li class="place-self-center">Amount</li>
+        <li class="place-self-end">Action</li>
       </ul>
     </section>
     <section>
-      <ul class="flex justify-between mt-2 px-5 py-2">
-        <li>Products</li>
-        <li>Order ID</li>
-        <li>Date</li>
-        <li>Customer name</li>
-        <li>Status</li>
-        <li>Amount</li>
-        <li>Action</li>
+      <ul
+        class="grid grid-cols-9 gap-6 mt-2 px-5 py-2 text-sm mb-4"
+        v-for="datum in data"
+        :key="datum.order_id"
+      >
+        <li class="place-self-start flex col-span-2">
+          <div class="w-12">
+            <img
+              :src="datum.product_image"
+              alt="Product image"
+              class="object-cover w-12 rounded-md"
+            />
+          </div>
+          <p class="ml-4 self-center">{{ datum.product_name }}</p>
+        </li>
+        <li class="justify-self-center">{{ datum.order_id }}</li>
+        <li class="justify-self-center">{{ datum.date }}</li>
+        <li class="justify-self-center col-span-2">{{ datum.name }}</li>
+        <li
+          class="justify-self-center text-sm"
+          :class="
+            datum.status === 'Pending' ? 'text-yellow-600' : 'text-green-600'
+          "
+        >
+          {{ datum.status }}
+        </li>
+        <li class="justify-self-center">{{ datum.amount }}</li>
+        <li class="justify-self-end">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+            ></path>
+          </svg>
+        </li>
       </ul>
     </section>
   </div>
@@ -49,7 +84,6 @@ const data = ref([
     name: "Anastasia Hasuna",
     status: "Delivered",
     amount: "$1100.00",
-    action: "url",
   },
   {
     product_image:
@@ -58,9 +92,8 @@ const data = ref([
     order_id: "11233",
     date: "Jun 23, 2022",
     name: "John Wick",
-    status: "Not Delivered",
+    status: "Pending",
     amount: "$5100.00",
-    action: "url",
   },
   {
     product_image:
@@ -71,7 +104,6 @@ const data = ref([
     name: "Anastasia Hasuna",
     status: "Delivered",
     amount: "$1100.00",
-    action: "url",
   },
   {
     product_image:
@@ -80,9 +112,8 @@ const data = ref([
     order_id: "11235",
     date: "Mar 1, 2021",
     name: "Endeavor Asante",
-    status: "Not Delivered",
+    status: "Pending",
     amount: "$9000.00",
-    action: "url",
   },
   {
     product_image:
@@ -93,7 +124,6 @@ const data = ref([
     name: "Bruno Fernandes",
     status: "Delivered",
     amount: "$6100.00",
-    action: "url",
   },
   {
     product_image:
@@ -101,21 +131,19 @@ const data = ref([
     product_name: "Harry Maguire",
     order_id: "11237",
     date: "Jun 29, 2022",
-    name: "Anastasia Hasuna",
-    status: "Not Delivered",
+    name: "Chelsea Football Club",
+    status: "Pending",
     amount: "Free",
-    action: "url",
   },
   {
     product_image:
-      "https://images.pexels.com/photos/1009158/pexels-photo-1009158.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/324557/pexels-photo-324557.jpeg?auto=compress&cs=tinysrgb&w=1200",
     product_name: "Simpons Coke Can",
     order_id: "11238",
     date: "Feb 2, 2022",
     name: "Aisha Huang",
     status: "Delivered",
     amount: "$109100.00",
-    action: "url",
   },
 ]);
 </script>

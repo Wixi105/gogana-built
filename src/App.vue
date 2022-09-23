@@ -1,10 +1,10 @@
 <template>
   <div class="flex">
-    <div class="w-1/5">
+    <div class="w-1/5 fixed">
       <SideBar />
     </div>
     <!-- Right Side -->
-    <div class="w-4/5 p-10 mt-2 h-fit">
+    <div class="w-4/5 p-10 mt-2 h-fit ml-[20%]">
       <div class="flex justify-between items-center">
         <!-- Header Start -->
         <p class="text-xl font-medium">Dashboard</p>
