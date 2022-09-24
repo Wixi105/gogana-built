@@ -47,8 +47,8 @@
           class="justify-self-center text-sm self-center px-4 py-1 rounded-md"
           :class="
             datum.status === 'Pending'
-              ? 'text-yellow-400 bg-yellow-100'
-              : 'text-green-400 bg-green-100 border border-green-300'
+              ? 'text-yellow-600 bg-yellow-100 shadow-sm'
+              : 'text-green-600 bg-green-100 shadow-sm'
           "
         >
           {{ datum.status }}
